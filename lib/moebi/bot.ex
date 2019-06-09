@@ -64,12 +64,11 @@ defmodule Moebi.Bot do
   def handle_info(_, _, state), do: {:ok, state}
 
   defp channel_name do
-    datetime =
+    date =
       Date.utc_today()
       |> Date.to_string()
-      |> String.replace(" ", "-")
 
-    "moebi-#{datetime}-#{UUID.uuid1()}"
+    "moebi-#{date}-#{UUID.uuid1()}"
   end
 
   defp escape_channel(%{id: id, name: name}) do
