@@ -2,7 +2,7 @@ defmodule Moebi.Bot do
   use Slack
   alias Moebi.Channels
 
-  @bot_user_id "UKD0Q53FW"
+  @bot_user_id Application.get_env(:bot_user_id)
 
   def token, do: Application.get_env(:moebi, :slack_bot_token)
 

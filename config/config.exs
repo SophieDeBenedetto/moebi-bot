@@ -11,6 +11,7 @@ use Mix.Config
 # You can configure your application as:
 #
 config :moebi, slack_bot_token: System.get_env("MOEBI_BOT_TOKEN")
+config :moebi, bot_user_id: System.get_env("BOT_USER_ID")
 config :slack, api_token: System.get_env("SLACK_API_TOKEN")
 #
 # and access this configuration in your application as:
