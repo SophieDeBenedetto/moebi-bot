@@ -47,7 +47,7 @@ defmodule Moebi.Bot do
         state
       ) do
     IO.inspect(message)
-    send_message("Sorry, I don't know what that means", message.channel, slack)
+    send_message("Ummm? Sorry? I don't know what that means. Did you mean chicken?", message.channel, slack)
     {:ok, state}
   end
 
